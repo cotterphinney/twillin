@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twilio</title>
+  <%= stylesheet_link_tag    "application", "reset", media: "all", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+
+	<% if current_user.present? %>
+		<a data-method="delete" href="/users/sign_out" rel="nofollow"><span id="sign-out">Sign Out</span></a>
+	<% end %>
+
+	<%= yield %>
+
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+</body>
+</html>

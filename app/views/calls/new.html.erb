@@ -1,0 +1,17 @@
+<h1>Conference Call</h1>
+
+<form accept-charset="UTF-8" action="make_call" id="call-form" method="post">
+	<input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Ub8DcjP+uNh4nRZv80wmK86VCADxz6rioPpL2boXAXw=" />
+	<div id="muted">
+		<p>Muted Numbers</p>
+		<span class="remove-field" id="remove-field-muted">-</span><input id="your_number" name="numbers[muted][0]" type="text" placeholder="Enter a number" /><span class="add-field" id="add-field-muted">+</span><br>
+	</div>
+	<div id="non-muted">
+		<p>Non-Muted Numbers</p>
+		<input id="first_number" name="numbers[nonmuted][0]" type="text" placeholder="Enter a number" /><br>
+		<span class="remove-field" id="remove-field-nonmuted">-</span><input id="second_number" name="numbers[nonmuted][1]" type="text" placeholder="Enter a number" /><span class="add-field" id="add-field-nonmuted">+</span><br>
+	</div>
+	<input id="submit" name="commit" type="submit" value="Call" />
+</form>
+
+<a href="../calls"><span id="back">back</span></a>

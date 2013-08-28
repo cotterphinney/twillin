@@ -1,0 +1,10 @@
+<h1>Texts#new</h1>
+<p>Find me in app/views/texts/new.html.erb</p>
+
+<%= form_tag("send_text", method: "post") do %>
+  <%= text_field_tag(:number_to_send_to, "Enter a number") %><br>
+  <%= text_area_tag(:text_body, "Enter a message") %>
+  <%= submit_tag("Text") %>
+<% end %>
+
+<%= link_to 'back', :root %>

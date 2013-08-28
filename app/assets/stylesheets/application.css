@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body {
+	background-color: #9545e5;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+html {
+	height: 100%;
+}
+h1 {
+	font-size: 50px;
+	font-weight: 300;
+}
+#back {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+#back:hover {
+	text-decoration: underline;
+}
+#back-inner {
+	margin-left: 5px;
+}
+#sign-out {
+	z-index: 1;
+	display: block;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 28px;
+	border: 1px solid #fffef4;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+#sign-out:hover {
+	background-color: #fffef4;
+	color: #9545e5;
+}
+#wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#content {
+	margin: auto;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	width: 70%;
+	min-width: 766px;
+	height: 70%;
+}
+.action {
+	margin: 5% 40px;
+	display: inline-block;
+	width: 300px;
+	height: 360px;
+	font-size: 60px;
+	font-weight: 100;
+}
+.action-inner {
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+.action-inner:hover {
+	background-color: #7834bc;
+}
+a {
+	color: #fffef4;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin-top: 0;
+}
+.main-image {
+	margin-top: 50px;
+}

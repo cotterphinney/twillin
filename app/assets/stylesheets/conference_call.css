@@ -1,0 +1,95 @@
+#call-form {
+	margin: 0 auto;
+	max-width: 300px;
+	max-height: 900px;
+}
+input {
+	background-color: #9545e5;
+	border: 1px solid #fffef4;
+	height: 40px;
+	margin: 10px 0;
+	color: #fffef4;
+	font-size: 13px;
+	font-weight: 100;
+}
+#call-form input {
+	width: 100%;
+	text-align: center;
+}
+#muted {
+	position: relative;
+}
+#non-muted {
+	position: relative;
+}
+.add-field {
+	position: absolute;
+	right: -56px;
+	bottom: 10px;
+	padding: 1px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #fffef4;
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+	cursor: default;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+.add-field:hover {
+	background-color: #fffef4;
+	color: #9545e5;
+}
+#add-field-nonmuted {
+}
+.remove-field {
+	position: absolute;
+	right: -106px;
+	bottom: 10px;
+	padding: 1px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #fffef4;
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+	cursor: default;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+.remove-field:hover {
+	background-color: #fffef4;
+	color: #9545e5;
+}
+#remove-field-nonmuted {
+}
+#submit {
+	background-color: #fffef4;
+	color: #9545e5;
+	width: 213px;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+#submit:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fffef4;
+}
+::-webkit-input-placeholder {
+   color: #7834bc;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #7834bc;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #7834bc;  
+}
+:-ms-input-placeholder {  
+   color: #7834bc;  
+}

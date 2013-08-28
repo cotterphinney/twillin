@@ -1,0 +1,21 @@
+<% if current_user.present? %>
+	<div id="wrapper">
+		<div id="content">
+			<div class="action" >
+				<div class="action-inner" id="text">
+					<%= link_to image_tag('bubble.svg', size: '200x200', class: 'main-image'), new_text_path %>
+				</div>
+				<p>Text</p>
+			</div>
+			<div class="action" id="call">
+				<div class="action-inner" id="call">
+					<%= link_to image_tag('phone.svg', size: '200x200', class: 'main-image'), '/calls' %>
+				</div>
+				<p>Call</p>
+			</div>
+		</div>
+	</div>
+<% else %>
+	<%= link_to 'Sign In', new_user_session_path %> |
+	<%= link_to 'Register', new_user_registration_path %>
+<% end %>
